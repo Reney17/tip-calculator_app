@@ -1,0 +1,28 @@
+:root {
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  font-size: 24px;
+}
+/* This is our body */
+body {
+  background-color: var(--Light-grayish-cyan);
+  font-family: "Space-Mono", monospace;
+}
+.title {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.title,
+label,
+.icon {
+  color: var(--Dark-grayish-cyan);
+}
+.main_container {
+  height: 30px;
+  width: 40px;
+  background-color: var(--White);
+}
