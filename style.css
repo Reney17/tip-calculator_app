@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   --Very-dark-cyan: hsl(183, 100%, 15%);
   --Dark-grayish-cyan: hsl(186, 14%, 43%);
@@ -21,8 +26,18 @@ label,
 .icon {
   color: var(--Dark-grayish-cyan);
 }
-.main_container {
-  height: 30px;
-  width: 40px;
+main {
   background-color: var(--White);
+  margin: 0;
+  padding: 1.5rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: bold;
+}
+.input_wrapper {
+  background-color: var(--Very-light-grayish-cyan);
 }
