@@ -72,6 +72,7 @@ section.left {
   text-align: center;
   padding: 1rem;
   border-radius: 8px;
+  cursor: pointer;
 }
 .options-grid {
   display: grid;
@@ -80,4 +81,10 @@ section.left {
 }
 .option:hover {
   background-color: hsl(172, 67%, 45%);
+  color: var(--Very-dark-cyan);
 }
+.option:nth-child(6) {
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+}
+/*----------------------BOTTON CONTAINER------------------ */
