@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="style.css" />
+
     <link
       rel="icon"
       type="image/png"
@@ -20,6 +22,7 @@
 
     <title>Frontend Mentor | Tip calculator app</title>
 
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -31,21 +34,26 @@
     </style>
   </head>
   <body>
-    <h1 class="title">spli<br />tter</h1>
-    <!--  MAIN CONTAINER -->
+    <h1 class="title">
+      spli <br />
+      tter
+    </h1>
+
+    <!-- MAIN CONTAINER -->
     <main>
-      <!-- SECTION LEFT/ TOP-LEFT -->
+      <!-- Section Left / Top -->
       <section class="left">
         <div class="bill">
           <label for="bill_amount">Bill</label>
           <div class="input_wrapper">
-            <img class="icon" src="/images/icon-dollar.svg" alt="" />
-            <input type="number" name="bill_amount" placeholder="0" />
+            <img src="/images/icon-dollar.svg" alt="" class="icon" />
+            <input type="number" id="bill_amount" placeholder="0.00" />
           </div>
         </div>
-        <!--SELECT TIP OPTION-->
+
+        <!-- SELECT TIP OPTIONS -->
         <div class="tip-options">
-          <label for=""></label>
+          <label for="">Select tip %</label>
           <div class="options-grid">
             <div class="option">5%</div>
             <div class="option">10%</div>
@@ -55,16 +63,37 @@
             <div class="option">Custom</div>
           </div>
         </div>
-        <!--SELECT NUMBER OF PEOPLE-->
+
+        <!-- SELECT NUMBER OF PEOPLE -->
         <div class="people">
           <label for="people_amount">Number of People</label>
           <div class="input_wrapper">
-            <img class="" src="/images/icon-person.svg" alt="" />
-            <input type="number" name="bill_amount" placeholder="0" />
+            <img src="/images/icon-person.svg" alt="" class="icon" />
+            <input type="number" name="people_amount" placeholder="1" />
           </div>
         </div>
       </section>
-      <!-- SECTION BOTTOM /RIGHT -->
+
+      <!-- Section Right / Bottom -->
+      <section class="right">
+        <div class="tip_amt_pp">
+          <p>
+            Tip Amount<br />
+            <span class="small_gray">/person</span>
+          </p>
+          <h2 id="tip_amount">$0.00</h2>
+        </div>
+
+        <div class="total_amt_pp">
+          <p>
+            Total Amount<br />
+            <span class="small_gray">/person</span>
+          </p>
+          <h2 id="total_amount">$0.00</h2>
+        </div>
+        <button class="reset">RESET</button>
+      </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
